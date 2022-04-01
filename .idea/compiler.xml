@@ -10,6 +10,8 @@
         <module name="SpringRedis" />
         <module name="nacos-customer" />
         <module name="nacos-config" />
+        <module name="Note" />
+        <module name="springboot-jwt" />
         <module name="nacos-provider01" />
         <module name="nacos-provider02" />
         <module name="nacos-provider03" />
@@ -26,6 +28,7 @@
       <module name="nacos-provider01" options="" />
       <module name="nacos-provider02" options="" />
       <module name="nacos-provider03" options="" />
+      <module name="springboot-jwt" options="" />
     </option>
   </component>
 </project>

@@ -13,6 +13,7 @@
         <module>nacos-customer</module>
         <module>nacos-provider01</module>
         <module>nacos-provider02</module>
+        <module>Note</module>
     </modules>
 
     <properties>

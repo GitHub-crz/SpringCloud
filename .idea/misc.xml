@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/nacos-provider03/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis-plus/pom.xml" />
         <option value="$PROJECT_DIR$/SpringRedis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jwt/pom.xml" />
       </list>
     </option>
   </component>

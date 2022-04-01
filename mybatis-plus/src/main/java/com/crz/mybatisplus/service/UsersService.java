@@ -1,6 +1,6 @@
 package com.crz.mybatisplus.service;
 
-import com.crz.mybatisplus.entity.RobotExecuteLog;
+import com.crz.mybatisplus.entity.Users;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author rzcai
- * @since 2022-03-21
+ * @since 2022-04-01
  */
-public interface RobotExecuteLogService extends IService<RobotExecuteLog> {
+public interface UsersService extends IService<Users> {
 
 }
