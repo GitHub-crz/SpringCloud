@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringRedis" />
+        <module name="nacos-customer" />
+        <module name="nacos-config" />
+        <module name="nacos-provider01" />
+        <module name="nacos-provider02" />
+        <module name="nacos-provider03" />
+        <module name="mybatis-plus" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringRedis" options="" />
+      <module name="mybatis-plus" options="" />
+      <module name="nacos-config" options="" />
+      <module name="nacos-customer" options="" />
+      <module name="nacos-provider01" options="" />
+      <module name="nacos-provider02" options="" />
+      <module name="nacos-provider03" options="" />
+    </option>
+  </component>
+</project>
