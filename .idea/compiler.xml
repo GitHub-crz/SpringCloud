@@ -16,6 +16,7 @@
         <module name="nacos-provider02" />
         <module name="nacos-provider03" />
         <module name="mybatis-plus" />
+        <module name="springboot-jwt2" />
       </profile>
     </annotationProcessing>
   </component>
@@ -29,6 +30,7 @@
       <module name="nacos-provider02" options="" />
       <module name="nacos-provider03" options="" />
       <module name="springboot-jwt" options="" />
+      <module name="springboot-jwt2" options="" />
     </option>
   </component>
 </project>
