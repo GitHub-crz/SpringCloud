@@ -10,6 +10,8 @@
         <module name="SpringRedis" />
         <module name="nacos-customer" />
         <module name="nacos-config" />
+        <module name="WebSocket01" />
+        <module name="Geteway" />
         <module name="Note" />
         <module name="springboot-jwt" />
         <module name="nacos-provider01" />

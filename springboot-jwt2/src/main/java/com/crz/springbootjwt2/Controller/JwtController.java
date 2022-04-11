@@ -4,6 +4,8 @@ import com.crz.springbootjwt2.Entity.Users;
 import com.crz.springbootjwt2.Service.userService;
 import com.crz.springbootjwt2.Util.JwtHelper;
 import com.crz.springbootjwt2.Vo.ResultVo;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,14 +34,14 @@ public class JwtController {
         }
         Users query_user = userService.get(user);
         if (query_user == null) {
-            return ResultVOUtil.error("400", "用户名或邮箱错误");
+            return ResultVo.error("400", "用户名或邮箱错误");
         }
         //验证密码
         PasswordEncoder encoder = new BCryptPasswordEncoder();
         boolean is_password = encoder.matches(password, query_user.getPassword());
         if (!is_password) {
             //密码错误，返回提示
-            return ResultVOUtil.error("400", "密码错误");
+            return ResultVo.error("400", "密码错误");
         }
 
         String jwtToken = JwtHelper.createJWT(query_user.getUsername(),
@@ -51,6 +53,6 @@ public class JwtController {
                 audience.getBase64Secret());
 
         String result_str = "bearer;" + jwtToken;
-        return ResultVOUtil.success(result_str);
+        return ResultVo.success(result_str);
     }
 }

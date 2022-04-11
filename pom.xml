@@ -14,6 +14,8 @@
         <module>nacos-provider01</module>
         <module>nacos-provider02</module>
         <module>Note</module>
+        <module>Geteway</module>
+        <module>WebSocket01</module>
     </modules>
 
     <properties>
